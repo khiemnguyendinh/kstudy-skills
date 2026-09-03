@@ -7,6 +7,11 @@ Bộ skill Claude Code cho đội Kstudy. 2 nhóm:
 
 Skill đụng hạ tầng/production (Lovable, GitHub, SSH, Supabase...) nằm ở repo riêng private `kstudy-skills-noi-bo`, không nằm ở đây.
 
+## Hướng dẫn cài theo nhóm
+
+- [Nhóm Đào tạo](docs/cai-dat-dao-tao.md)
+- [Nhóm Tuyển sinh](docs/cai-dat-tuyen-sinh.md)
+
 ## Cài lần đầu
 
 ```bash

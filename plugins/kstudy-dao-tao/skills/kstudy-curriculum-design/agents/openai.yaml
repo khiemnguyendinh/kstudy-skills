@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kstudy Curriculum Design"
+  short_description: "Thiết kế khung chương trình Kstudy"
+  default_prompt: "Dùng $kstudy-curriculum-design để xây dựng khung chương trình Kstudy có research, workload, traceability và workbook Excel từ một ý tưởng ngành nghề."

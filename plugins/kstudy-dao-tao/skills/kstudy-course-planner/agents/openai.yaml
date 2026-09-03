@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kstudy Course Planner"
+  short_description: "Thiết kế và cập nhật Curriculum Kstudy"
+  default_prompt: "Use $kstudy-course-planner to research, audit, and plan a Kstudy course before handing it to kstudy-syllabus-creator."

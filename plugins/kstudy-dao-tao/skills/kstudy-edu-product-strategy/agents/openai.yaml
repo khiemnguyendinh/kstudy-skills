@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kstudy Education Product Strategy"
+  short_description: "Chiến lược giáo dục, danh mục BCG và AI-native"
+  default_prompt: "Use $kstudy-edu-product-strategy để xây dựng chiến lược giáo dục dựa trên bằng chứng, phân loại danh mục BCG, tách động cơ tài chính và chốt lộ trình có owner, KPI, gate."

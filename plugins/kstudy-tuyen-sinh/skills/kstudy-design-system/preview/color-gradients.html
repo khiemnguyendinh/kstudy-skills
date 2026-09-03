@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- @dsCard group="Colors" name="Gradients & key visual" subtitle="Navy→blue ramps + blended gradient-circle key visual" viewport="700x265" --><html lang="vi"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+*{box-sizing:border-box}html,body{margin:0}
+body{font-family:var(--font-body);background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
+.wrap{padding:26px 30px}
+.lbl{font-family:var(--font-sans);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate-500)}
+.mono{font-family:var(--font-sans);font-size:11.5px;color:var(--slate-500)}
+
+.grid{display:grid;grid-template-columns:1fr 1.5fr;gap:16px;margin-top:12px;align-items:stretch}
+/* small ramp swatches */
+.ramps{display:flex;flex-direction:column;gap:12px}
+.ramp{display:flex;align-items:center;gap:12px}
+.chip{width:64px;height:46px;border-radius:12px;flex:none;border:1px solid var(--line)}
+.linear{background:var(--grad-brand)}
+.circle{background:var(--grad-circle);border-radius:50%}
+.spark{background:var(--grad-spark)}
+.night{background:var(--grad-night)}
+.ramp .nm{font-family:var(--font-sans);font-weight:600;font-size:13px;color:var(--ink)}
+
+/* key-visual tile — blended gradient circles (ref image) */
+.kv{position:relative;border-radius:18px;overflow:hidden;min-height:206px;
+  background:linear-gradient(135deg,#1D237D 0%,#247DF9 118%)}
+.kv .c{position:absolute;border-radius:50%}
+/* yellow glow top-right */
+.kv .big{width:230px;height:230px;right:-64px;top:-72px;
+  background:radial-gradient(circle at 42% 42%, rgba(255,216,77,.46), transparent 66%)}
+/* blue-soft glow bottom-left */
+.kv .mid{width:170px;height:170px;left:-50px;bottom:-56px;
+  background:radial-gradient(circle at 42% 40%, rgba(91,156,251,.72), transparent 70%)}
+/* small accent circle */
+.kv .sm{width:62px;height:62px;left:50%;top:30%;background:rgba(255,255,255,.14)}
+.kv .dot{width:9px;height:9px;background:var(--yellow-500);left:32%;top:24%}
+.kv .cap{position:absolute;left:16px;bottom:14px;z-index:3}
+.kv .cap b{display:block;font-family:var(--font-sans);font-weight:600;font-size:14px;color:#fff}
+.kv .cap span{font-family:var(--font-sans);font-size:11.5px;color:rgba(237,239,251,.72)}
+</style></head><body><div class="wrap">
+<div class="lbl">Gradients &amp; key visual</div>
+<div class="grid">
+  <div class="ramps">
+    <div class="ramp"><div class="chip linear"></div><div><div class="nm">grad-brand</div><div class="mono">linear · #1D237D→#247DF9</div></div></div>
+    <div class="ramp"><div class="chip circle"></div><div><div class="nm">grad-circle</div><div class="mono">radial · #247DF9→#1D237D</div></div></div>
+    <div class="ramp"><div class="chip spark"></div><div><div class="nm">grad-spark</div><div class="mono">blue→cyan→yellow</div></div></div>
+    <div class="ramp"><div class="chip night"></div><div><div class="nm">grad-night</div><div class="mono">deep navy</div></div></div>
+  </div>
+  <div class="kv">
+    <div class="c big"></div>
+    <div class="c mid"></div>
+    <div class="c sm"></div>
+    <div class="c dot"></div>
+    <div class="cap"><b>Gradient circle — key visual</b><span>Blended orbs · size contrast · symmetry</span></div>
+  </div>
+</div>
+</div></body></html>

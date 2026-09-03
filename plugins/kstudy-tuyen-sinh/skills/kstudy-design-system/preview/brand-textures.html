@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- @dsCard group="Brand" name="Background textures" subtitle="Gradient circles (light/bright/brand) · grid · dots (light/dark)" viewport="700x360" --><html lang="vi"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+*{box-sizing:border-box}html,body{margin:0}
+body{font-family:var(--font-body);background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
+.wrap{padding:26px 30px}
+.lbl{font-family:var(--font-sans);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate-500)}
+.grid-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.t{height:144px;border-radius:14px;position:relative;overflow:hidden}
+.cap{position:absolute;left:12px;bottom:10px;font-family:var(--font-sans);font-size:11px;font-weight:600;z-index:4;letter-spacing:.01em}
+.cap.lt{color:#54597f}
+.cap.dk{color:rgba(255,255,255,.94)}
+.c{position:absolute;border-radius:50%}
+.dot{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--yellow-500);z-index:3}
+
+/* 1 — Circles · light (white bg, blue circles 30%) */
+.t1{background:#fff;border:1px solid var(--line)}
+.t1 .big{width:140px;height:140px;right:-42px;top:-44px;background:rgba(36,125,249,.30)}
+.t1 .mid{width:98px;height:98px;left:-30px;bottom:-32px;background:rgba(36,125,249,.30)}
+.t1 .sm{width:42px;height:42px;left:48%;top:32%;background:rgba(36,125,249,.30)}
+.t1 .dot{left:30%;top:24%}
+
+/* 2 — Circles · bright blue */
+.t2{background:linear-gradient(135deg,#247DF9 0%,#4F95FB 58%,#7FB2FE 120%)}
+.t2 .big{width:148px;height:148px;right:-44px;top:-46px;background:radial-gradient(circle at 40% 40%, rgba(255,216,77,.5), transparent 66%)}
+.t2 .mid{width:100px;height:100px;left:-30px;bottom:-34px;background:radial-gradient(circle at 42% 40%, rgba(255,255,255,.34), transparent 70%)}
+.t2 .sm{width:44px;height:44px;left:48%;top:30%;background:rgba(255,255,255,.20)}
+.t2 .dot{left:30%;top:22%}
+
+/* 3 — Circles · brand (navy→blue + yellow & blue-soft glow blending) */
+.t3{background:linear-gradient(135deg,#1D237D 0%,#247DF9 118%)}
+.t3 .big{width:150px;height:150px;right:-44px;top:-46px;background:radial-gradient(circle at 42% 40%, rgba(255,216,77,.46), transparent 66%)}
+.t3 .mid{width:120px;height:120px;left:-34px;bottom:-36px;background:radial-gradient(circle at 42% 40%, rgba(91,156,251,.72), transparent 70%)}
+.t3 .sm{width:44px;height:44px;left:48%;top:30%;background:rgba(255,255,255,.14)}
+.t3 .dot{left:30%;top:22%}
+
+/* 4 — Grid · bright blue (white grid, opacity gradient 5%→15%) */
+.t4{background:#247DF9}
+.t4::before{content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.15) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.15) 1px,transparent 1px);
+  background-size:24px 24px;
+  -webkit-mask-image:linear-gradient(135deg, rgba(0,0,0,.33) 0%, rgba(0,0,0,1) 100%);
+          mask-image:linear-gradient(135deg, rgba(0,0,0,.33) 0%, rgba(0,0,0,1) 100%)}
+
+/* 5 — Dots · light */
+.t5{background:#F4F8FF;border:1px solid var(--line)}
+.t5::before{content:"";position:absolute;inset:0;
+  background-image:radial-gradient(rgba(36,125,249,.30) 2.5px, transparent 2.5px);
+  background-size:24px 24px;background-position:6px 6px}
+
+/* 6 — Dots · dark (gradient bg + dot array faded across) */
+.t6{background:linear-gradient(135deg,#1D237D 0%,#2A4FC4 60%,#2E6FE0 122%)}
+.t6::before{content:"";position:absolute;inset:0;
+  background-image:radial-gradient(rgba(124,170,255,.6) 2.5px, transparent 2.5px);
+  background-size:24px 24px;background-position:6px 6px;
+  -webkit-mask-image:linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.15) 100%);
+          mask-image:linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.15) 100%)}
+</style></head><body><div class="wrap">
+<div class="lbl">Background textures</div>
+<div class="grid-tiles">
+  <div class="t t1"><div class="c big"></div><div class="c mid"></div><div class="c sm"></div><span class="dot"></span><span class="cap lt">Circles · light</span></div>
+  <div class="t t2"><div class="c big"></div><div class="c mid"></div><div class="c sm"></div><span class="dot"></span><span class="cap dk">Circles · bright blue</span></div>
+  <div class="t t3"><div class="c big"></div><div class="c mid"></div><div class="c sm"></div><span class="dot"></span><span class="cap dk">Circles · brand</span></div>
+  <div class="t t4"><span class="cap dk">Grid · bright blue</span></div>
+  <div class="t t5"><span class="cap lt">Dots · light</span></div>
+  <div class="t t6"><span class="cap dk">Dots · dark</span></div>
+</div>
+</div></body></html>

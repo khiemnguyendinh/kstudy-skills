@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kstudy Slide Design"
+  short_description: "Kstudy slides with branded Napkin diagrams"
+  icon_small: "./assets/brand/kstudy-icon.png"
+  icon_large: "./assets/brand/kstudy-logo-full.png"
+  brand_color: "#1D237D"
+  default_prompt: "Use $kstudy-slide-design to create a Kstudy HTML slide deck with on-brand visuals and Napkin AI diagrams where appropriate."

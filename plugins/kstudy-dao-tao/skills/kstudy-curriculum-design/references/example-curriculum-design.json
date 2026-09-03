@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "design_mode": "NEW_PROGRAM",
+  "research_level": "STANDARD",
+  "design_depth": "STANDARD",
+  "status": "PROPOSED",
+  "project_brief": {
+    "working_title": "Example program",
+    "field": "Example field",
+    "occupation": "Example occupation",
+    "target_learner": "Beginner adult learner",
+    "level": "entry",
+    "geography": "Vietnam",
+    "delivery_model": "hybrid",
+    "business_goal": "Internal validator fixture",
+    "duration_assumption": "PROPOSED",
+    "assumptions": [],
+    "open_questions": []
+  },
+  "occupation_analysis": {
+    "job_families": [],
+    "roles": [],
+    "tasks": [
+      {
+        "task_id": "T-001",
+        "role_id": "ROLE-001",
+        "statement": "Create a work output from a defined brief",
+        "frequency": "PROPOSED",
+        "difficulty": "entry",
+        "priority": "high",
+        "evidence_status": "PROPOSED",
+        "source_ids": []
+      }
+    ],
+    "tools": [],
+    "work_outputs": [],
+    "quality_standards": [],
+    "sources": []
+  },
+  "competency_architecture": {
+    "framework_adaptation": ["KASH", "OBE"],
+    "competencies": [
+      {
+        "competency_id": "C-001",
+        "statement": "Create and review the defined work output",
+        "kash_dimension": ["Skill", "Habit"],
+        "conditions": "Given a brief and a rubric",
+        "performance_criteria": ["Meets the rubric"],
+        "evidence": ["Work artifact"],
+        "task_ids": ["T-001"],
+        "status": "PROPOSED"
+      }
+    ]
+  },
+  "program_outcomes": [
+    {
+      "plo_id": "PLO-001",
+      "statement": "Create a work output that meets a defined standard",
+      "bloom_level": "Create",
+      "kash_dimensions": ["Skill", "Habit"],
+      "cdio_adaptation": "adapted",
+      "evidence": ["Capstone artifact"],
+      "priority": "high",
+      "source_ids": []
+    }
+  ],
+  "capstone": {
+    "title": "Example capstone",
+    "artifact": "Work output",
+    "plo_ids": ["PLO-001"],
+    "assessment_direction": "Rubric-based review"
+  },
+  "curriculum_map": [
+    {
+      "course_id": "COURSE-001",
+      "title": "Example course",
+      "stage": "core",
+      "purpose": "Build the example competency",
+      "sequence": 1,
+      "prerequisite_ids": [],
+      "plo_mapping": {"PLO-001": "M"},
+      "clo_placeholders": ["CLO-001"],
+      "core_topics": ["Brief to output"],
+      "artifacts": ["Work artifact"],
+      "assessment_direction": "Rubric-based review",
+      "workload": {"total_hours": 2},
+      "tool_constraints": [],
+      "source_ids": [],
+      "handoff_status": "PROPOSED"
+    }
+  ],
+  "workload": {
+    "program_totals": {
+      "direct_live_hours": 0.5,
+      "elearning_hours": 0.25,
+      "self_study_hours": 0.25,
+      "practice_project_hours": 0.5,
+      "assessment_feedback_hours": 0.25,
+      "mentor_coaching_hours": 0.25,
+      "total_hours": 2
+    },
+    "course_totals": [
+      {
+        "course_id": "COURSE-001",
+        "direct_live_hours": 0.5,
+        "elearning_hours": 0.25,
+        "self_study_hours": 0.25,
+        "practice_project_hours": 0.5,
+        "assessment_feedback_hours": 0.25,
+        "mentor_coaching_hours": 0.25,
+        "total_hours": 2
+      }
+    ],
+    "activity_register": [],
+    "assumptions": []
+  },
+  "traceability": {
+    "links": [
+      {
+        "task_id": "T-001",
+        "competency_id": "C-001",
+        "plo_id": "PLO-001",
+        "course_id": "COURSE-001",
+        "clo_id_or_placeholder": "CLO-001",
+        "activity_id_or_placeholder": "ACT-001",
+        "assessment_id_or_direction": "Rubric review"
+      }
+    ],
+    "coverage_summary": {},
+    "orphan_plos": [],
+    "orphan_courses": [],
+    "unmapped_activities": [],
+    "status": "PROPOSED"
+  },
+  "research": {
+    "brief": {},
+    "jd_window": {},
+    "findings": [],
+    "jd_signals": [],
+    "competitor_benchmarks": [],
+    "sources": [],
+    "gaps": [],
+    "recommendations": []
+  },
+  "quality_review": {
+    "evidence_gate": "PROPOSED",
+    "academic_gate": "PROPOSED",
+    "workload_gate": "PROPOSED",
+    "traceability_gate": "PROPOSED",
+    "handoff_gate": "PROPOSED",
+    "blockers": []
+  },
+  "handoff": {
+    "target_skill": "kstudy-course-planner",
+    "status": "PROPOSED",
+    "course_specs_ready": ["COURSE-001"],
+    "blocking_questions": [],
+    "assumptions_requiring_approval": [],
+    "source_gaps": [],
+    "next_action": "Academic review"
+  }
+}

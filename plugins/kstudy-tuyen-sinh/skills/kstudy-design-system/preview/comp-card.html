@@ -1,0 +1,54 @@
+<!doctype html>
+<!-- @dsCard group="Components" name="Card" subtitle="Icon + title + body" viewport="700x270" --><html lang="vi"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+*{box-sizing:border-box}html,body{margin:0}
+body{font-family:var(--font-body);background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
+.wrap{padding:26px 30px}
+.lbl{font-family:var(--font-sans);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate-500);margin-bottom:14px}
+.split{display:grid;grid-template-columns:1fr 1.12fr;gap:16px;align-items:stretch}
+
+/* light card */
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow-md)}
+.ib{width:52px;height:52px;border-radius:12px;background:var(--blue-50);color:var(--blue-600);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.ib svg{width:27px;height:27px}
+.card h3{font-family:var(--font-sans);font-weight:600;font-size:19px;color:var(--ink);margin:0 0 8px}
+.card p{font-family:var(--font-sans);font-size:14px;line-height:1.55;color:var(--slate-700);margin:0}
+
+/* dark panel holding glass cards (ref: dashboard) */
+.dark{position:relative;border-radius:18px;overflow:hidden;padding:18px;display:flex;flex-direction:column;gap:14px;
+  background:linear-gradient(135deg,#1D237D 0%,#2A4FC4 60%,#247DF9 120%)}
+.dark::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.10) 1.5px,transparent 1.5px);background-size:22px 22px;pointer-events:none}
+.glass{position:relative;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:16px;display:flex;align-items:center;gap:14px;backdrop-filter:blur(6px)}
+.gib{width:44px;height:44px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.14);color:#fff}
+.gib svg{width:23px;height:23px}
+.glass h4{font-family:var(--font-sans);font-weight:600;font-size:15px;color:#fff;margin:0 0 3px}
+.glass span{font-family:var(--font-sans);font-size:12px;color:rgba(237,239,251,.72)}
+
+/* stat card with yellow accent bar */
+.stat{position:relative;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:14px 16px 14px 20px;overflow:hidden}
+.stat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--yellow-500)}
+.stat .k{font-family:var(--font-sans);font-weight:600;font-size:12px;color:rgba(237,239,251,.80)}
+.stat .v{font-family:var(--font-display);font-weight:700;font-size:34px;line-height:1.05;color:#fff;margin-top:2px}
+.stat .v small{font-family:var(--font-sans);font-weight:500;font-size:12px;color:rgba(237,239,251,.6)}
+</style></head><body><div class="wrap">
+<div class="lbl">Card · light &amp; dark</div>
+<div class="split">
+  <div class="card">
+    <div class="ib"><i data-lucide="workflow"></i></div>
+    <h3>Dựng Automation</h3>
+    <p>Kết nối tool, dữ liệu và nội dung thành quy trình chạy tự động 24/7.</p>
+  </div>
+  <div class="dark">
+    <div class="glass">
+      <div class="gib"><i data-lucide="rocket"></i></div>
+      <div><h4>Speed Learner</h4><span>Huy hiệu đã mở khoá</span></div>
+    </div>
+    <div class="stat">
+      <div class="k">Tổng phút mentor</div>
+      <div class="v">92 <small>phút</small></div>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script><script>lucide.createIcons()</script>
+</div></body></html>

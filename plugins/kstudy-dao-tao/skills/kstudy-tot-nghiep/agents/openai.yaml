@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kstudy Tốt Nghiệp"
+  short_description: "Soạn đề tài tốt nghiệp chuẩn Kstudy"
+  default_prompt: "Use $kstudy-tot-nghiep to draft a Kstudy graduation thesis document with brand-aligned structure, tone, and evaluation checklist."

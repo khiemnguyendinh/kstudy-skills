@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kstudy Build Course Funnel"
+  short_description: "Build funnel khóa học theo ngôn ngữ khách hàng"
+  default_prompt: "Use $kstudy-build-course-funnel to turn approved Kstudy course materials into an evidence-based funnel with clear outcomes, module content, instructors, and FAQs."

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kstudy Design System"
+  short_description: "Kstudy brand, slides, web, and visuals"
+  icon_small: "./assets/kstudy-icon.png"
+  icon_large: "./assets/kstudy-logo-full.png"
+  brand_color: "#1D237D"
+  default_prompt: "Use $kstudy-design-system to design an on-brand Kstudy slide deck, landing page, or visual asset."

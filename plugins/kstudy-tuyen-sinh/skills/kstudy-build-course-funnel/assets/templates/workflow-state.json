@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "workflow_id": "{{workflow_id}}",
+  "project_name": "{{project_name}}",
+  "mode": "STRATEGY",
+  "status": "INITIALIZED",
+  "current_gate": "INPUT",
+  "course_source": {
+    "path": "{{course_source_path}}",
+    "version": "{{course_version}}",
+    "fingerprint": "{{course_source_sha256}}",
+    "approval_status": "UNKNOWN"
+  },
+  "audience_contract": {
+    "fingerprint": "{{audience_contract_sha256}}",
+    "segment": "{{primary_audience}}",
+    "role": "{{role}}",
+    "department_or_use_case": "{{department_or_use_case}}",
+    "job_to_be_done": "{{job_to_be_done}}",
+    "desired_outcome": "{{desired_outcome}}",
+    "ai_maturity": "{{ai_maturity_or_UNKNOWN}}",
+    "anti_persona": "{{anti_persona}}",
+    "approval_status": "PROPOSED"
+  },
+  "product_truth_approval": {
+    "status": "PENDING",
+    "course_fingerprint": null,
+    "audience_fingerprint": null,
+    "decision_id": null,
+    "approved_at": null
+  },
+  "acquisition": {
+    "channel": "{{channel}}",
+    "source": "{{source}}",
+    "content_angle": "{{content_angle}}",
+    "content_format": "{{content_format}}",
+    "landing_variant": "{{landing_variant}}"
+  },
+  "conversion": {
+    "funnel_entry": "{{funnel_entry}}",
+    "primary": "{{primary_conversion}}",
+    "secondary": "{{secondary_conversion}}"
+  },
+  "gates": {
+    "INPUT": "PENDING",
+    "PRODUCT_TRUTH": "PENDING",
+    "RESEARCH": "PENDING",
+    "STRATEGY": "PENDING",
+    "CLAIMS": "PENDING",
+    "BRIEF": "PENDING",
+    "BUILD": "PENDING",
+    "QA": "PENDING",
+    "PUBLISH": "PENDING"
+  },
+  "selected_journey": null,
+  "visual_direction": {
+    "visual_style": "{{visual_style}}",
+    "required_sections": []
+  },
+  "connectors": [
+    {
+      "name": "{{connector_name}}",
+      "status": "UNVERIFIED",
+      "approved_actions": []
+    }
+  ],
+  "artifacts": {},
+  "pending_external_actions": [],
+  "decisions": [],
+  "completion_scope": null,
+  "revision_reason": null
+}

@@ -1,0 +1,24 @@
+{
+  "name": "kstudy-skills",
+  "owner": { "name": "Khiem Nguyen Dinh", "url": "https://github.com/khiemnguyendinh" },
+  "metadata": {
+    "description": "Skill Claude Code cho đội Kstudy: đào tạo (curriculum/syllabus/lesson/slide) và tuyển sinh (funnel/design system).",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "kstudy-dao-tao",
+      "source": "./plugins/kstudy-dao-tao",
+      "description": "Skill đội đào tạo: course-planner, curriculum-design, syllabus-creator, lesson-plan-creator, slide-design, tot-nghiep, edu-product-strategy.",
+      "version": "1.0.0",
+      "category": "education"
+    },
+    {
+      "name": "kstudy-tuyen-sinh",
+      "source": "./plugins/kstudy-tuyen-sinh",
+      "description": "Skill đội tuyển sinh: build-course-funnel, design-system.",
+      "version": "1.0.0",
+      "category": "marketing"
+    }
+  ]
+}

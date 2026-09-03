@@ -2,8 +2,8 @@
 
 Bộ skill Claude Code cho đội Kstudy. 2 nhóm:
 
-- **kstudy-dao-tao** — course-planner, curriculum-design, syllabus-creator, lesson-plan-creator, slide-design, tot-nghiep, edu-product-strategy
-- **kstudy-tuyen-sinh** — build-course-funnel, design-system
+- **kstudy-dao-tao** — course-planner, curriculum-design, syllabus-creator, lesson-plan-creator, slide-design, tot-nghiep
+- **kstudy-tuyen-sinh** — build-course-funnel, design-system, edu-product-strategy
 
 Skill đụng hạ tầng/production (Lovable, GitHub, SSH, Supabase...) nằm ở repo riêng private `kstudy-skills-noi-bo`, không nằm ở đây.
 

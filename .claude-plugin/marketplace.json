@@ -9,14 +9,14 @@
     {
       "name": "kstudy-dao-tao",
       "source": "./plugins/kstudy-dao-tao",
-      "description": "Skill đội đào tạo: course-planner, curriculum-design, syllabus-creator, lesson-plan-creator, slide-design, tot-nghiep, edu-product-strategy.",
+      "description": "Skill đội đào tạo: course-planner, curriculum-design, syllabus-creator, lesson-plan-creator, slide-design, tot-nghiep.",
       "version": "1.0.0",
       "category": "education"
     },
     {
       "name": "kstudy-tuyen-sinh",
       "source": "./plugins/kstudy-tuyen-sinh",
-      "description": "Skill đội tuyển sinh: build-course-funnel, design-system.",
+      "description": "Skill đội tuyển sinh: build-course-funnel, design-system, edu-product-strategy.",
       "version": "1.0.0",
       "category": "marketing"
     }

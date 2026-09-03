@@ -1,6 +1,6 @@
 {
   "name": "kstudy-dao-tao",
-  "description": "Skill Claude Code cho đội đào tạo Kstudy: curriculum, syllabus, lesson plan, slide design, tốt nghiệp, chiến lược sản phẩm giáo dục.",
+  "description": "Skill Claude Code cho đội đào tạo Kstudy: curriculum, syllabus, lesson plan, slide design, tốt nghiệp.",
   "version": "1.0.0",
   "author": { "name": "Khiem Nguyen Dinh" }
 }
